@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Project Name:Portfolio Website
+Copyright: ©S.Shafique -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title Here</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/index.css"/>
+  </head>
+  <body>
+    <div class="header-container">
+      <!-- Header section -->
+      <section id="header">
+        <div class="header-top">
+          <div class="logo">
+            <img src="Images/logo.png" alt="logo">
+          </div>
+          <div class="nav-menu">
+            <ul id="sidemenu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="bottom-left">
+            <h1 class="name"><span>Alam</span>Hussain</h1>
+            <h3 class="profession">-A Photoshop Expert & Photographer</h3>
+            <p class="short-desc">
+             Photography is my passion & Editing is my life.
+            </p>
+            <!-- <a href="#" class="btn">Get Started</a> -->
+          </div>
+          <div class="bottom">
+            <a href="#" id="insta"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" id="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <!-- <a href="#"><i class="fa-brands fa-linkedin"></i></a> -->
+          </div>
+        </div>
+      </section>
+      <!-- About section -->
+      <section id="about">
+        <div class="about-left">
+          <img src="Images/Gallery/pic-4.jpg" alt="user-sideimg"/>
+        </div>
+        <div class="about-right">
+          <div class="section-title">
+            <h2 class="sub-title">About Me</h2>
+            <h3 class="title">Some text here</h3>
+          </div>
+          <p class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Illo, molestias sequi, ullam dicta consectetur vitae aut 
+            quos doloremque reprehenderit enim amet quia atque quo 
+            laborum cupiditate, eligendi sint ducimus sit.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openTab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+            <p class="tab-links" onclick="openTab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Skill-1</span><br />Text Here
+              </li>
+              <li><span>Skill-2</span><br />Text Here</li>
+              <li><span>Skill-3</span><br />Text Here</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>From - To</span><br />
+                Company Name Here
+              </li>
+              <li>
+                <span>From - To</span><br />Company Name Here
+              </li>
+              <li>
+                <span>From - To</span><br />Company Name Here
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>From-To</span><br />Degree with Institute
+              </li>
+              <li>
+                <span>From-To</span><br />Degree with Institute
+              </li>
+              <li>
+                <span>From-To</span><br />Degree with Institute
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Service section -->
+      <section id="service">
+        <div class="section-title">
+          <h2 class="sub-title">My Services</h2>
+          <h3 class="title">Offering You My Services</h3>
+        </div>
+        <div class="services">
+          <div>
+            <!---icon here--->
+            <i class=""></i>
+            <h2>Lorem</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              fugit optio dolore.
+            </p>
+          </div>
+          <div>
+            <!---icon here--->
+            <i class=""></i>
+            <h2>Lorem</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              fugit optio dolore.
+            </p>
+          </div>
+          <div>
+            <!---icon here--->
+            <i class=""></i>
+            <h2>Lorem</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              fugit optio dolore.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio section -->
+      <section id="portfolio">
+        <h2 class="sub-title">Portfolio</h2>
+        <div class="container-lg"> 
+          <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3">
+            <div class="col">
+              <img src="Images/Gallery/pic-20.jpg" class="gallery-item" alt="gallery">
+            </div>
+            <div class="col">
+              <img src="Images/Gallery/pic-1.jpg" class="gallery-item" alt="gallery">
+            </div>
+            <div class="col">
+              <img src="Images/Gallery/pic-2.jpg" class="gallery-item" alt="gallery">
+            </div>
+            <div class="col">
+              <img src="Images/Gallery/pic-3.jpg" class="gallery-item" alt="gallery">
+            </div>
+            <div class="col">
+              <img src="Images/Gallery/pic-9.jpg" class="gallery-item" alt="gallery">
+            </div>
+            <div class="col">
+              <img src="Images/Gallery/pic-10.jpg" class="gallery-item" alt="gallery">
+            </div>
+            <div class="col">
+              <img src="Images/Gallery/pic-6.jpg" class="gallery-item" alt="gallery">
+            </div>
+            <div class="col">
+              <img src="Images/Gallery/pic-7.jpg" class="gallery-item" alt="gallery">
+            </div>
+            <div class="col">
+              <img src="Images/Gallery/pic-8.jpg" class="gallery-item" alt="gallery">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Modal -->
+      <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="Images/Gallery/pic-1.jpg" class="modal-img" alt="modal-img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contact section -->
+      <section id="contact">
+        <div class="section-title">
+          <h2 class="sub-title">Contact</h2>
+          <h3 class="title">Get in Touch</h3>
+        </div>
+        <div class="content">
+          <div class="contact-left">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="4"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit">
+                Send Message <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+          <div class="vl"></div>
+          <div class="contact-right">
+            <div class="col address">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="info">
+                <h2 class="title">Address</h2>
+                <p>Address type here</p>
+              </div>
+            </div>
+            <div class="col phone">
+              <i class="fa-solid fa-phone"></i>
+              <div class="info">
+                <h2 class="title">Call</h2>
+                <p>+92 123 4567890</p>
+              </div>
+            </div>
+            <div class="col email">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="info">
+                <h2 class="title">Email</h2>
+                <p>mymailaddress@gmail.com</p>
+              </div>
+            </div>
+            <div class="col website">
+              <i class="fa-solid fa-globe"></i>
+              <div class="info">
+                <h2 class="title">Website</h2>
+                <p>www.domain.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            Copyright ©️ S.S Portfolio | Made by S.Shafique
+          </p>
+        </div>
+      </section>
+    </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="JS/script.js"></script>
+  </body>
+</html>
